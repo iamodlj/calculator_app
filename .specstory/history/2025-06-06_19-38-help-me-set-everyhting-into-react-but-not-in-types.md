@@ -560,3 +560,44 @@ Your calculator now has a more intuitive color scheme where the primary action b
 
 ---
 
+_**User**_
+
+why robots.txt , can we use a different name?
+
+---
+
+_**Assistant**_
+
+The `robots.txt` file has a **specific, standardized name** that cannot be changed. Here's why:
+
+## 🤖 Why "robots.txt" specifically?
+
+1. **Web Standard**: `robots.txt` is an official web standard (RFC 9309) that search engines expect
+2. **Fixed Location**: Search engines automatically look for it at `https://yourdomain.com/robots.txt`
+3. **Universal Recognition**: All major search engines (Google, Bing, Yahoo, etc.) only recognize this exact filename
+4. **Case Sensitive**: It must be lowercase `robots.txt`, not `Robots.txt` or `ROBOTS.TXT`
+
+## 📍 What robots.txt does:
+
+Let me check your current robots.txt file: I see your `robots.txt` still has the old placeholder URL. Let me update it with your actual Vercel URL: 
+```
+
+```
+## ✅ Your `robots.txt` file:
+
+- **Tells search engines**: "Please index my entire website" (`Allow: /`)
+- **Points to sitemap**: Helps search engines find your sitemap.xml
+- **Must be named**: `robots.txt` (no other name will work)
+- **Must be located**: In the root directory (`robots.txt`)
+
+## 🚫 What happens if you rename it:
+
+- Search engines won't find it
+- No crawling instructions will be followed
+- Your sitemap won't be automatically discovered
+- SEO optimization will be lost
+
+**Bottom line**: `robots.txt` is like `index.html` - it's a web standard that requires this exact filename to function properly. You cannot use a different name and maintain the same functionality.
+
+---
+
