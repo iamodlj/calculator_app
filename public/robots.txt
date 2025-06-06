@@ -1,5 +1,12 @@
+# robots.txt - Search Engine Instructions
+# This file tells search engine crawlers how to interact with our calculator app
+# 
+# React Calculator by ASOG.Dev
+# URL: https://calculator-app-iamodljs-projects.vercel.app/
+
+# Allow all search engines to crawl all pages
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Tell search engines where to find our sitemap
 Sitemap: https://calculator-app-iamodljs-projects.vercel.app/sitemap.xml

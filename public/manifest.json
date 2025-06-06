@@ -1,7 +1,12 @@
 {
+  "_comment": "PWA Manifest - Makes the calculator installable as a web app",
+  "_developer": "ASOG.Dev",
+  "_description": "This manifest enables Progressive Web App features",
+  
   "short_name": "Calculator",
   "name": "React Calculator by ASOG.Dev",
   "description": "A beautiful and modern online calculator built with React",
+  
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,6 +14,7 @@
       "type": "image/x-icon"
     }
   ],
+  
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#ffffff",
