@@ -4,10 +4,12 @@ Calculator built with React and styled with Tailwind CSS.
 
 ## Features
 
-- Basic arithmetic operations (+, -, *, /)
+- Basic arithmetic operations (+, -, ×, ÷)
 - Clear and backspace functionality
 - Modern, responsive design
 - Error handling for invalid calculations
+- SEO optimized for search engines
+- PWA ready with manifest.json
 
 ## Getting Started
 
@@ -47,7 +49,10 @@ npm run build
 ```
 calculator_app/
 ├── public/
-│   └── index.html
+│   ├── index.html
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   └── manifest.json
 ├── src/
 │   ├── App.jsx
 │   └── index.js

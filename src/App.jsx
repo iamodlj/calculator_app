@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   const [input, setInput] = useState('');
@@ -40,13 +41,16 @@ const App = () => {
             value={displayInput()}
             readOnly
           />
-        </div>
-        <div className="grid grid-cols-4 gap-3">
+        </div>        <div className="grid grid-cols-4 gap-3">
           {buttons.map((btn) => (
             <button
               key={btn}
               onClick={() => btn === '=' ? handleCalculate() : handleClick(btn)}
-              className="p-4 text-lg font-medium bg-gray-200 rounded hover:bg-blue-300 transition-colors"
+              className={`p-4 text-lg font-medium rounded transition-colors ${
+                btn === '=' 
+                  ? 'bg-green-500 text-white hover:bg-green-600' 
+                  : 'bg-gray-200 hover:bg-blue-300'
+              }`}
             >
               {btn}
             </button>
@@ -65,6 +69,7 @@ const App = () => {
           </button>
         </div>
       </div>
+      <Analytics />
     </div>
   );
 };
